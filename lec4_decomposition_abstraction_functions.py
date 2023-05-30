@@ -100,4 +100,49 @@
 # calc = sq(f,2) # sq(func = f, x = 2)
 # print(calc)
 
+# def max_val(x, y):
+#     if x > y:
+#         return x
+#     else:
+#         return y
 
+# max_val = max_val(3, 2)
+# print(max_val)
+
+def find_root(x, power, epsilon):
+    # Find interval containing answer
+    if x < 0 and power%2 == 0:
+        return None # Negative number has no even-powered roots
+    low = min(-1, x)
+    high = max(1, x) 
+    # Use bisection search
+    ans = (high + low)/2
+    while abs(ans**power - x) >= epsilon:
+        if ans**power < x:
+            low = ans
+        else: 
+            high = ans
+        ans = (high + low)/2
+    return ans
+
+# find_root = find_root(1, powers, 0.001)
+# print(find_root)
+
+"""
+Finger exercise 11: Write a function isIn that accepts two strings as
+arguments and returns True if either string occurs anywhere in the other,
+and False otherwise. Hint: you might want to use the built-in str
+operation in.
+"""
+
+def is_In(str1, str2):
+    if len(str1) > len(str2): # Comparing which string is longer and checking to see
+        if str2 in str1:      # if the shorter string is present in the longer string 
+        return True
+    else:
+        if str1 in str2:
+        return True
+    return False
+
+test = isIn('abc','abcdef')
+print(test)
