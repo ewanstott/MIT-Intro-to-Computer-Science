@@ -147,3 +147,4 @@ def is_In(str1, str2):
 test = isIn('abc','abcdef')
 print(test)
 
+
