@@ -135,16 +135,16 @@ and False otherwise. Hint: you might want to use the built-in str
 operation in.
 """
 
-def is_In(str1, str2):
-    if len(str1) > len(str2): # Comparing which string is longer and checking to see
-        if str2 in str1:      # if the shorter string is present in the longer string 
-        return True
-    else:
-        if str1 in str2:
-        return True
-    return False
+# def is_In(str1, str2):
+#     if len(str1) > len(str2): # Comparing which string is longer and checking to see
+#         if str2 in str1:      # if the shorter string is present in the longer string 
+#         return True
+#     else:
+#         if str1 in str2:
+#         return True
+#     return False
 
-test = isIn('abc','abcdef')
-print(test)
+# test = isIn('abc','abcdef')
+# print(test)
 
-
+s.find(sub)
