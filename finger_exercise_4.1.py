@@ -32,12 +32,24 @@ operation in.
 
 
 
-str1 = input('Enter word 1: ')
-str2 = input('Enter word 2: ')
+# str1 = input('Enter word 1: ')
+# str2 = input('Enter word 2: ')
 
-def isIn(str1, str2):
-    return bool(str1 in str2 or str2 in str1)
+# def isIn(str1, str2):
+#     return bool(str1 in str2 or str2 in str1)
 
-test = isIn(str1, str2)
+# test = isIn(str1, str2)
 
-print(test)
+# print(test)
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+i = 0
+for n in range(0,n):
+    print(i*i)
+    i += 1
+    
+    
