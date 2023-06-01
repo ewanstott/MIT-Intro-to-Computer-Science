@@ -60,17 +60,16 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
+    # 1. for each letters in secret_word: 
+    # 2.  if the letter is not in the lesttersGuessed:
+    #       Stop and return False 
+    #       if not, return True
     # FILL IN YOUR CODE HERE AND DELETE "pass"
     
-
-    if letters_guessed in secret_word
-    return True
-
-
-
-    pass
-
-
+for char in secret_word:
+  if char not in letters_guessed:
+    return False
+return True 
 
 def get_guessed_word(secret_word, letters_guessed):
     '''
