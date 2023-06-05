@@ -1,0 +1,15 @@
+# iterate over a string:
+#     condition if substring == "bob":
+#         then add to tally
+# print(tally)
+
+
+
+s = 'azcbobobegghakl'
+substring = 'bob'
+bobcount = 0
+
+for i in range(len(s)+ 1):
+    if s[i:i+len(substring)] == substring:
+        bobcount += 1
+print("Number of times bob occurs is: ", bobcount)
