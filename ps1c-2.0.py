@@ -60,6 +60,6 @@ if calculate_current_savings(1) >= total_cost*portion_down_payment:  #portion_sa
 
 print("Best savings rate: ", portion_saved)
 print("Based on the code, current savings after 3 years will be: ", calculate_current_savings(portion_saved))
-print("Bisection steps in search: "", steps)
-else: 
+print("Bisection steps in search: ", steps)
+else:
 print("It is not possible to pay the down payment in 3 years")

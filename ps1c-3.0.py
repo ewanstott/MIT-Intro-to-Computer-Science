@@ -26,8 +26,8 @@ while current_savings <= down_payment: #if this condition is FALSE, keep guessin
     guess =  (high + low)/2.0 #with new low and high boundaries, make another guess. Halving interval with every guess.
     num_guesses =+ 1 
 
-#     current_savings += portion_saved*monthly_salary + current_savings*monthly_return
-#     months += 1 
+    current_savings += portion_saved*monthly_salary + current_savings*monthly_return
+    months += 1 
 
     if True:
         print("Percentage of salary you need to save per month to achieve down payment: ", savings_rate)
